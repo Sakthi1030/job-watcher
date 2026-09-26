@@ -43,6 +43,7 @@ class Filters:
         self.skills = [re.compile(p, re.I) for p in profile.get("description_skills", [])]
         self.min_skill_hits = profile.get("description_min_skill_hits", 2)
         self.desc_exclude = compile_any(profile.get("description_exclude", ["$^"]))
+        self.closed = compile_any(profile.get("closed_markers", ["$^"]))
         self.location = compile_any(profile["locations"])
         self.max_years = profile.get("max_min_years", 3)
         self.stretch_max_years = profile.get("stretch_max_years", self.max_years)
@@ -60,6 +61,10 @@ class Filters:
     def description_ok(self, description: str) -> bool:
         """Drop roles whose description reveals seniority the title hides (team lead, mentoring)."""
         return not self.desc_exclude.search(description or "")
+
+    def is_closed(self, page_text: str) -> bool:
+        """Career APIs sometimes keep filled jobs listed; the job page itself says so."""
+        return bool(self.closed.search(page_text or ""))
 
     def location_ok(self, location: str) -> bool:
         return bool(self.location.search(location or ""))

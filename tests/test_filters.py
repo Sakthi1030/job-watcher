@@ -61,3 +61,10 @@ def test_description_seniority():
     f = Filters(PROFILE)
     assert not f.description_ok("Role is 70% design and 30% of time in team mentoring, guidance")
     assert f.description_ok("Build Power BI dashboards and validate data with SQL")
+
+
+def test_closed_postings():
+    f = Filters(PROFILE)
+    assert f.is_closed("Power BI Developer ... Sorry, this position has been filled.")
+    assert f.is_closed("This job is no longer available")
+    assert not f.is_closed("Apply now for the Power BI Developer role")

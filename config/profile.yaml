@@ -81,6 +81,15 @@ description_exclude:
   - people management
   - manage a team
 
+# Text on a job page meaning the posting is no longer open (some career APIs keep filled jobs listed).
+closed_markers:
+  - position has been filled
+  - no longer (?:available|accepting|open)
+  - job (?:has )?expired
+  - this job is closed
+  - posting has been closed
+  - job is no longer
+
 # Location must match one of these (Chennai, Bengaluru, Hyderabad only).
 # "Multiple locations" postings (common at Deloitte USI) usually include these cities.
 locations:

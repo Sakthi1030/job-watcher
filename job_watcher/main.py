@@ -7,6 +7,7 @@ from pathlib import Path
 import yaml
 
 from .filters import Filters, min_years
+from .http import get_text
 from .report import send_email, to_markdown, write_reports
 from .scoring import score_jobs
 from .sources import SOURCES
@@ -69,6 +70,18 @@ def run(dry_run=False, send=True, only=None, test_email=False, resend_all=False)
         if filters.location_ok(j.location) and filters.description_ok(j.description)
         and (not j.vague or filters.skill_hits(j.description) >= filters.min_skill_hits)
     ]
+    def still_open(job):
+        try:
+            return not filters.is_closed(get_text(job.url, retries=1))
+        except Exception:
+            return True  # if the page cannot be checked, keep the job rather than lose it
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        open_flags = list(pool.map(still_open, located))
+    closed = [j for j, ok in zip(located, open_flags) if not ok]
+    if closed:
+        log.info("Dropped %d filled/closed postings: %s", len(closed), ", ".join(f"{j.company} {j.title}" for j in closed))
+    located = [j for j, ok in zip(located, open_flags) if ok]
     core = [j for j in located if filters.experience_ok(j.min_years)]
     stretch = [j for j in located if filters.is_stretch(j.min_years)]
     score_jobs(core + stretch, profile)
