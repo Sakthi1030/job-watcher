@@ -46,6 +46,41 @@ title_exclude:
   - intern
   - returnship
 
+# Companies marked broad_titles: true (Accenture, Capgemini, Cognizant, Deloitte USI) often use vague
+# titles. For those, these generic titles are also read, and kept only if the description mentions at
+# least description_min_skill_hits of the skills below.
+title_generic:
+  - analyst
+  - associate
+  - specialist
+  - engineer
+  - developer
+  - consultant
+  - practitioner
+description_skills:
+  - power ?bi
+  - tableau
+  - \bsql\b
+  - \bdax\b
+  - power query
+  - microsoft fabric
+  - azure data
+  - databricks
+  - pyspark
+  - snowflake
+  - dashboard
+  - reporting
+description_min_skill_hits: 2
+
+# Drop roles whose description shows seniority the title does not (e.g. "30% of time in team mentoring").
+description_exclude:
+  - mentoring
+  - mentor (?:the |a )?team
+  - team lead
+  - lead a team
+  - people management
+  - manage a team
+
 # Location must match one of these (Chennai, Bengaluru, Hyderabad only).
 # "Multiple locations" postings (common at Deloitte USI) usually include these cities.
 locations:

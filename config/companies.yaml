@@ -3,12 +3,14 @@
 #   greenhouse:      id = slug in boards.greenhouse.io/<slug>
 #   lever:           id = slug in jobs.lever.co/<slug>
 #   workday:         host / tenant / site from <tenant>.wdN.myworkdayjobs.com/<site>
-#   deloitte_usi, capgemini, cognizant: custom career-site parsers (no id needed)
+#   accenture, deloitte_usi, capgemini, cognizant: custom career-site parsers (no id needed)
+#   broad_titles: true -> also read vague titles (Analyst, Engineer...) and match on the description
 companies:
   # Consulting and services
-  - {name: Deloitte USI, ats: deloitte_usi}
-  - {name: Capgemini, ats: capgemini}
-  - {name: Cognizant, ats: cognizant}
+  - {name: Accenture, ats: accenture, broad_titles: true}
+  - {name: Deloitte USI, ats: deloitte_usi, broad_titles: true}
+  - {name: Capgemini, ats: capgemini, broad_titles: true}
+  - {name: Cognizant, ats: cognizant, broad_titles: true}
   - {name: PwC, ats: workday, host: pwc.wd3.myworkdayjobs.com, tenant: pwc, site: Global_Experienced_Careers}
   - {name: Kyndryl, ats: workday, host: kyndryl.wd5.myworkdayjobs.com, tenant: kyndryl, site: KyndrylProfessionalCareers}
   - {name: Sutherland, ats: smartrecruiters, id: Sutherland}

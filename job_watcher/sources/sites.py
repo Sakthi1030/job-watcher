@@ -2,7 +2,7 @@
 import re
 from urllib.parse import quote
 
-from ..http import get_json, get_text, strip_html
+from ..http import get_json, get_text, post_form, strip_html
 from ..models import Job
 
 
@@ -74,3 +74,29 @@ class Cognizant:
 
     def describe(self, job, cfg):
         job.description = strip_html(get_text(job.url))
+
+
+class Accenture:
+    """accenture.com job search (the same JSON endpoint the careers page calls)."""
+
+    API = "https://www.accenture.com/api/accenture/elastic/findjobs"
+    HEADERS = {"Accept": "application/json", "Origin": "https://www.accenture.com",
+               "Referer": "https://www.accenture.com/in-en/careers/jobsearch"}
+
+    def fetch(self, cfg, terms):
+        jobs = {}
+        for term in terms:
+            form = {"startIndex": "0", "maxResultSize": str(cfg.get("max_results", 50)), "jobKeyword": term,
+                    "jobCountry": "India", "jobLanguage": "en", "countrySite": "in-en", "sortBy": "0",
+                    "searchType": "vectorSearch", "jobFilters": "[]"}
+            data = post_form(self.API, form, headers=self.HEADERS)
+            for j in data.get("data", []):
+                jobs[j["requisitionId"]] = Job(
+                    company=cfg["name"], title=j.get("title", ""), source="accenture", job_id=j["requisitionId"],
+                    location=f"{j.get('feedCity', '')}, {j.get('country', 'India')}",
+                    url=j.get("jobDetailUrl", "").replace("{0}", "in-en"),
+                    posted=(j.get("updateDate") or "")[:10],
+                    description=f"Career level: {j.get('careerLevel', '')}. {j.get('jobDescriptionClean', '')} "
+                                f"Skills: {j.get('workdaySkill', '')}",
+                )
+        return list(jobs.values())

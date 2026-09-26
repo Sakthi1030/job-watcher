@@ -40,12 +40,17 @@ def run(dry_run=False, send=True, only=None, test_email=False, resend_all=False)
             except Exception as exc:
                 errors.append(f"{company['name']} ({exc.__class__.__name__})")
                 continue
-            new = [j for j in jobs if (resend_all or j.key not in store) and filters.title_ok(j.title)]
-            log.info("%-22s %4d postings, %3d new title matches", company["name"], len(jobs), len(new))
-            candidates += [(company, j) for j in new]
+            fresh = [j for j in jobs if resend_all or j.key not in store]
+            new = [j for j in fresh if filters.title_ok(j.title)]
+            # Some firms use vague titles; read those descriptions and keep them only if they mention my skills.
+            vague = [j for j in fresh if company.get("broad_titles") and not filters.title_ok(j.title)
+                     and filters.generic_title_ok(j.title)]
+            log.info("%-22s %4d postings, %3d title matches, %3d vague titles",
+                     company["name"], len(jobs), len(new), len(vague))
+            candidates += [(company, j, False) for j in new] + [(company, j, True) for j in vague]
 
-    def enrich(pair):
-        company, job = pair
+    def enrich(item):
+        company, job, vague = item
         source = SOURCES[company["ats"]]
         if not job.description and hasattr(source, "describe"):
             try:
@@ -53,12 +58,17 @@ def run(dry_run=False, send=True, only=None, test_email=False, resend_all=False)
             except Exception as exc:
                 log.warning("No description for %s: %s", job.url, exc)
         job.min_years = min_years(job.description)
+        job.vague = vague
         return job
 
     with ThreadPoolExecutor(max_workers=8) as pool:
         evaluated = list(pool.map(enrich, candidates))
 
-    located = [j for j in evaluated if filters.location_ok(j.location)]
+    located = [
+        j for j in evaluated
+        if filters.location_ok(j.location) and filters.description_ok(j.description)
+        and (not j.vague or filters.skill_hits(j.description) >= filters.min_skill_hits)
+    ]
     core = [j for j in located if filters.experience_ok(j.min_years)]
     stretch = [j for j in located if filters.is_stretch(j.min_years)]
     score_jobs(core + stretch, profile)

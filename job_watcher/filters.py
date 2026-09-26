@@ -39,12 +39,27 @@ class Filters:
     def __init__(self, profile: dict):
         self.include = compile_any(profile["title_include"])
         self.exclude = compile_any(profile["title_exclude"])
+        self.generic = compile_any(profile.get("title_generic", ["$^"]))
+        self.skills = [re.compile(p, re.I) for p in profile.get("description_skills", [])]
+        self.min_skill_hits = profile.get("description_min_skill_hits", 2)
+        self.desc_exclude = compile_any(profile.get("description_exclude", ["$^"]))
         self.location = compile_any(profile["locations"])
         self.max_years = profile.get("max_min_years", 3)
         self.stretch_max_years = profile.get("stretch_max_years", self.max_years)
 
     def title_ok(self, title: str) -> bool:
         return bool(self.include.search(title)) and not self.exclude.search(title)
+
+    def generic_title_ok(self, title: str) -> bool:
+        """Vague titles (e.g. "Custom Software Engineer") worth reading the description for."""
+        return bool(self.generic.search(title)) and not self.exclude.search(title)
+
+    def skill_hits(self, description: str) -> int:
+        return sum(1 for p in self.skills if p.search(description or ""))
+
+    def description_ok(self, description: str) -> bool:
+        """Drop roles whose description reveals seniority the title hides (team lead, mentoring)."""
+        return not self.desc_exclude.search(description or "")
 
     def location_ok(self, location: str) -> bool:
         return bool(self.location.search(location or ""))

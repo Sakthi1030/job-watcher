@@ -1,5 +1,5 @@
 from .ats import Greenhouse, Lever, SmartRecruiters, Workday
-from .sites import Capgemini, Cognizant, DeloitteUSI
+from .sites import Accenture, Capgemini, Cognizant, DeloitteUSI
 
 SOURCES = {
     "smartrecruiters": SmartRecruiters(),
@@ -9,4 +9,5 @@ SOURCES = {
     "deloitte_usi": DeloitteUSI(),
     "capgemini": Capgemini(),
     "cognizant": Cognizant(),
+    "accenture": Accenture(),
 }

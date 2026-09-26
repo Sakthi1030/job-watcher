@@ -14,6 +14,7 @@ class Job:
     min_years: int | None = None
     score: int | None = None
     reason: str = ""
+    vague: bool = False  # generic title, kept because the description matched my skills
     stretch: bool = False  # asks for more experience than the target, kept for a high fit score
 
     @property

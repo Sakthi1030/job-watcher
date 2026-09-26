@@ -47,3 +47,17 @@ def test_stretch_band():
     f = Filters(PROFILE)
     assert f.is_stretch(4) and f.is_stretch(5)
     assert not f.is_stretch(3) and not f.is_stretch(6) and not f.is_stretch(None)
+
+
+def test_vague_titles_need_skills_in_description():
+    f = Filters(PROFILE)
+    assert f.generic_title_ok("Custom Software Engineer")
+    assert not f.generic_title_ok("Senior Software Engineer")
+    assert f.skill_hits("Develop BI reports and dashboards using Power BI and SQL") >= 2
+    assert f.skill_hits("Develop Java microservices on Kubernetes") == 0
+
+
+def test_description_seniority():
+    f = Filters(PROFILE)
+    assert not f.description_ok("Role is 70% design and 30% of time in team mentoring, guidance")
+    assert f.description_ok("Build Power BI dashboards and validate data with SQL")

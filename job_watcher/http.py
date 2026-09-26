@@ -39,6 +39,11 @@ def post_json(url, payload, **kwargs):
     return _request("POST", url, json=payload, **kwargs).json()
 
 
+def post_form(url, fields: dict, **kwargs):
+    """POST multipart/form-data (as browsers send FormData) and return JSON."""
+    return _request("POST", url, files={k: (None, v) for k, v in fields.items()}, **kwargs).json()
+
+
 def strip_html(text: str) -> str:
     """HTML (possibly entity-escaped) to plain, single-spaced text."""
     text = html.unescape(html.unescape(text or ""))
