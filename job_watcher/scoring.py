@@ -58,7 +58,7 @@ def score_jobs(jobs, profile: dict) -> None:
             data = post_json(url, {
                 "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {"responseMimeType": "application/json", "temperature": 0},
-            }, retries=1)
+            }, retries=4)  # Gemini free tier returns 503 when busy
             result = json.loads(data["candidates"][0]["content"]["parts"][0]["text"])
             job.score, job.reason = int(result["score"]), result.get("reason", "")
         except Exception as exc:  # scoring is best effort; never fail the run over it
