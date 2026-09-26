@@ -55,7 +55,7 @@ def send_email(jobs, errors, test=False) -> bool:
     msg = MIMEText(body, "html")
     msg["Subject"] = f"Job watcher{' test' if test else ''}: {len(jobs)} new matches ({date.today():%d %b})"
     msg["From"] = user
-    msg["To"] = os.environ.get("MAIL_TO", user)
+    msg["To"] = (os.environ.get("MAIL_TO") or "").strip() or user  # unset secrets arrive as ""
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
         smtp.login(user, password)
         smtp.send_message(msg)

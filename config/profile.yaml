@@ -65,7 +65,7 @@ locations:
 max_min_years: 3
 
 # Gemini fit score (only runs when the GEMINI_API_KEY secret is set).
-gemini_model: gemini-2.5-flash
+gemini_model: gemini-flash-latest   # falls back to the newest available Flash model
 max_scored_per_run: 25
 candidate_summary: >
   About 1.75 years of experience. Power BI Analyst at a consulting firm (Microsoft Fabric,

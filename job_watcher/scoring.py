@@ -3,9 +3,26 @@ import json
 import logging
 import os
 
-from .http import post_json
+from .http import get_json, post_json
 
 log = logging.getLogger(__name__)
+API = "https://generativelanguage.googleapis.com/v1beta"
+
+
+def resolve_model(preferred: str, key: str) -> str | None:
+    """Use the configured model if it exists, else the newest available Flash model."""
+    try:
+        models = get_json(f"{API}/models", params={"key": key, "pageSize": 200}).get("models", [])
+    except Exception as exc:
+        log.warning("Could not list Gemini models: %s", exc)
+        return preferred
+    usable = [m["name"].removeprefix("models/") for m in models
+              if "generateContent" in m.get("supportedGenerationMethods", [])]
+    if preferred in usable:
+        return preferred
+    flash = sorted((n for n in usable if "flash" in n and "lite" not in n and "preview" not in n
+                    and "exp" not in n and "image" not in n and "tts" not in n), reverse=True)
+    return flash[0] if flash else None
 
 PROMPT = """You are screening job postings for one candidate.
 
@@ -26,8 +43,12 @@ def score_jobs(jobs, profile: dict) -> None:
     key = os.environ.get("GEMINI_API_KEY")
     if not key or not jobs:
         return
-    model = profile.get("gemini_model", "gemini-2.5-flash")
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
+    model = resolve_model(profile.get("gemini_model", "gemini-flash-latest"), key)
+    if not model:
+        log.warning("No Gemini Flash model available; skipping fit scores")
+        return
+    log.info("Scoring with %s", model)
+    url = f"{API}/models/{model}:generateContent?key={key}"
     for job in jobs[: profile.get("max_scored_per_run", 25)]:
         prompt = PROMPT.format(
             profile=profile["candidate_summary"], title=job.title, company=job.company,
