@@ -51,10 +51,12 @@ def score_jobs(jobs, profile: dict) -> None:
         log.warning("No Gemini Flash model available; skipping fit scores")
         return
     log.info("Scoring with %s", model)
+    # The real profile lives in the CANDIDATE_SUMMARY secret so it stays out of the public repo.
+    summary = os.environ.get("CANDIDATE_SUMMARY") or profile["candidate_summary"]
     url = f"{API}/models/{model}:generateContent?key={key}"
     for job in jobs[: profile.get("max_scored_per_run", 25)]:
         prompt = PROMPT.format(
-            profile=profile["candidate_summary"], title=job.title, company=job.company,
+            profile=summary, title=job.title, company=job.company,
             location=job.location, description=job.description[:4000],
         )
         try:

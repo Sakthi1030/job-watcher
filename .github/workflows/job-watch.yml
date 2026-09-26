@@ -43,6 +43,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CANDIDATE_SUMMARY: ${{ secrets.CANDIDATE_SUMMARY }}
         run: python -m job_watcher ${{ inputs.test_email && '--test-email' || '' }} ${{ inputs.resend_all && '--resend-all' || '' }}
 
       - name: Save state and report

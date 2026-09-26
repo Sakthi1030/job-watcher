@@ -67,11 +67,8 @@ gemini_model: gemini-flash-lite-latest   # Flash-Lite has a higher free quota; f
 min_fit_score: 40                        # hide jobs Gemini rates below this (unscored jobs are kept)
 max_scored_per_run: 40
 gemini_delay_seconds: 4
+# Used for LLM scoring only when the CANDIDATE_SUMMARY secret is not set.
+# Put your real profile in that secret so it is not public.
 candidate_summary: >
-  About 1.75 years of experience. Power BI Analyst at a consulting firm (Microsoft Fabric,
-  Power BI, DAX, Power Query, Azure SQL, PowerShell automation, client reporting); previously
-  Junior Data Engineer and SQL Developer (SQL Server, T-SQL, data migration, UAT). Projects:
-  Databricks/PySpark lakehouse with a FastAPI + React front end, a RAG chatbot with the Gemini
-  API, a Node.js CRM. M.Sc. Data Science and AI. Microsoft PL-300 and DP-700 certified.
-  Based in Chennai, open to Hyderabad, Bengaluru and Pune. Targets data analyst, BI developer,
-  data engineer and junior AI engineer roles at 0 to 3 years of experience.
+  Early-career data professional (0 to 3 years) with SQL, Power BI and Python,
+  looking for data analyst, BI developer and data engineer roles.

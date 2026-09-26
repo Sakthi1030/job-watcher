@@ -64,6 +64,7 @@ Add these repository secrets (Settings → Secrets and variables → Actions):
 | `GMAIL_APP_PASSWORD` | a Gmail [app password](https://myaccount.google.com/apppasswords) (not your normal password) |
 | `MAIL_TO` | where to send it (optional, defaults to `GMAIL_USER`) |
 | `GEMINI_API_KEY` | optional; enables the fit score ([get a free key](https://aistudio.google.com/apikey)) |
+| `CANDIDATE_SUMMARY` | optional; your profile in plain text for fit scoring, kept private (falls back to `candidate_summary` in `profile.yaml`) |
 
 The workflow in `.github/workflows/job-watch.yml` runs every day at 09:00 IST and can also be
 started by hand from the Actions tab. Without the email secrets it still writes
