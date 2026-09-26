@@ -1,6 +1,6 @@
 # Job Watcher
 
-![Job Watcher workflow](docs/job-watcher-workflow.png)
+![Job Watcher architecture](docs/job-watcher-architecture.png)
 
 A small pipeline that checks the career sites of 45+ companies every morning, keeps only the
 roles that match my profile, scores them with an LLM, and emails me the new ones.

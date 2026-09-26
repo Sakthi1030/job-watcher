@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Job Watcher architecture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/roughjs@4.6.6/bundled/rough.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1600px; height: 1120px; background: #fff; font-family: "Kalam", cursive; color: #1b1b1b; position: relative; overflow: hidden; }
+  svg#sketch { position: absolute; inset: 0; }
+  .t { position: absolute; }
+  h1 { position: absolute; left: 0; right: 0; top: 18px; text-align: center; font-size: 76px; font-weight: 700; }
+  .sub { position: absolute; left: 0; right: 0; top: 112px; text-align: center; font-size: 27px; color: #555; }
+  .ttl { font-size: 34px; font-weight: 700; }
+  .ico { display: inline-block; width: 46px; height: 46px; vertical-align: middle;
+         -webkit-mask: var(--u) center / contain no-repeat; mask: var(--u) center / contain no-repeat; background: var(--c); }
+  .chip { position: absolute; width: 300px; height: 58px; display: flex; align-items: center; justify-content: center;
+          font-size: 25px; color: #1d4ed8; }
+  .step { font-size: 25px; line-height: 1.25; margin: 0 0 10px; }
+  .step b { color: #c2410c; }
+  .lbl { position: absolute; font-size: 24px; color: #d62828; }
+  .code { font-family: "Kalam", cursive; font-size: 23px; line-height: 1.35; }
+  .note { font-size: 22px; color: #444; }
+</style></head><body>
+<svg id="sketch" width="1600" height="1120"></svg>
+
+<h1>Job Watcher Workflow</h1>
+<div class="sub">personalised job alerts, built on free tiers</div>
+
+<!-- Secrets card -->
+<div class="t" style="left:535px; top:176px; width:540px;">
+  <div class="ttl" style="font-size:28px"><span class="ico" style="--u:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/github.svg); --c:#181717; width:34px; height:34px"></span> GitHub Secrets 🔑</div>
+  <div class="code">CANDIDATE_SUMMARY: my resume<br>GEMINI_API_KEY &nbsp;·&nbsp; GMAIL_APP_PASSWORD</div>
+</div>
+
+<!-- Career sites -->
+<div class="t ttl" style="left:70px; top:392px; width:330px; text-align:center; color:#15803d; line-height:1.15">47 Company<br>Career Sites</div>
+<div class="chip" style="left:85px; top:520px">Workday APIs</div>
+<div class="chip" style="left:85px; top:600px">Greenhouse · Lever</div>
+<div class="chip" style="left:85px; top:680px">SmartRecruiters</div>
+<div class="chip" style="left:85px; top:760px">Deloitte USI · Capgemini</div>
+<div class="chip" style="left:85px; top:840px">Cognizant · PwC · NIQ ...</div>
+<div class="t note" style="left:70px; top:915px; width:330px; text-align:center">public job listings</div>
+
+<!-- GitHub Actions + Python -->
+<div class="t" style="left:585px; top:398px; width:440px; text-align:center">
+  <div class="ttl"><span class="ico" style="--u:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/githubactions.svg); --c:#2088FF"></span>
+  GitHub Actions</div>
+  <div class="note">runs every day at 9 AM IST</div>
+</div>
+<div class="t" style="left:600px; top:505px; width:420px;">
+  <div class="step"><span class="ico" style="--u:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/python.svg); --c:#3776AB; width:34px; height:34px"></span> <b>Python</b> scripts</div>
+  <div class="step">1. fetch new postings</div>
+  <div class="step">2. filter: title, city, 0-3 years</div>
+  <div class="step">3. read each job description</div>
+  <div class="step">4. ask Gemini to score the fit</div>
+  <div class="step">5. skip jobs already sent</div>
+</div>
+
+<!-- Gemini -->
+<div class="t" style="left:1215px; top:398px; width:330px; text-align:center">
+  <div class="ttl">LLM Layer</div>
+  <span class="ico" style="--u:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/googlegemini.svg); --c:#8E75B2; width:110px; height:110px; margin:14px 0 6px"></span>
+  <div style="font-size:30px; font-weight:700">Gemini</div>
+  <div class="note" style="margin-top:6px">reads the job + my resume<br>returns score 0-100 + reason</div>
+</div>
+
+<!-- Output -->
+<div class="t ttl" style="left:600px; top:888px; color:#6d28d9">Output</div>
+<div class="t" style="left:620px; top:945px; width:300px; text-align:center">
+  <span class="ico" style="--u:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/gmail.svg); --c:#EA4335; width:70px; height:70px"></span>
+  <div style="font-size:25px">Daily email</div><div class="note">new matches, fit score, why</div>
+</div>
+<div class="t" style="left:955px; top:945px; width:280px; text-align:center">
+  <div style="font-size:52px; line-height:70px">🧠</div>
+  <div style="font-size:25px">seen.json</div><div class="note">remembers what was sent</div>
+</div>
+<div class="t" style="left:1265px; top:945px; width:260px; text-align:center">
+  <div style="font-size:52px; line-height:70px">📄</div>
+  <div style="font-size:25px">report.md</div><div class="note">committed to the repo</div>
+</div>
+
+<!-- Arrow labels -->
+<div class="lbl" style="left:432px; top:585px; width:136px; text-align:center; line-height:1.1">fetch jobs<br>JSON/HTML</div>
+<div class="lbl" style="left:820px; top:336px">inject secrets</div>
+<div class="lbl" style="left:1045px; top:412px; width:150px; text-align:center">job + resume</div>
+<div class="lbl" style="left:1045px; top:668px; width:150px; text-align:center">score + reason</div>
+<div class="lbl" style="left:820px; top:838px">only new matches</div>
+
+<script>
+const rc = rough.svg(document.getElementById('sketch'));
+const svg = document.getElementById('sketch');
+const add = n => svg.appendChild(n);
+const box = (x, y, w, h, fill, stroke, opts = {}) => add(rc.rectangle(x, y, w, h,
+  { fill, fillStyle: 'solid', stroke, strokeWidth: 3, roughness: 1.6, bowing: 1.2, ...opts }));
+const arrow = (pts, color = '#d62828') => {
+  add(rc.curve(pts, { stroke: color, strokeWidth: 3, roughness: 1.2 }));
+  const [x1, y1] = pts[pts.length - 2], [x2, y2] = pts[pts.length - 1];
+  const a = Math.atan2(y2 - y1, x2 - x1), L = 22;
+  for (const d of [0.45, -0.45])
+    add(rc.line(x2, y2, x2 - L * Math.cos(a + d), y2 - L * Math.sin(a + d), { stroke: color, strokeWidth: 3, roughness: 1 }));
+};
+
+box(515, 163, 570, 135, '#eeeeee', '#333');                 // secrets
+box(40, 375, 390, 580, '#b7f0c1', '#1e6fd9');               // career sites
+for (let i = 0; i < 5; i++) box(80, 515 + i * 80, 310, 64, '#a8d8ff', '#1e6fd9', { roughness: 1.3 });
+box(570, 375, 470, 420, '#ffc9c9', '#f08c00');              // GitHub Actions
+box(1200, 375, 360, 330, '#ffec99', '#222');                // Gemini
+box(570, 870, 990, 225, '#d0bfff', '#222');                 // output
+
+arrow([[430, 665], [500, 660], [567, 665]]);                // sites -> actions
+arrow([[800, 297], [796, 335], [800, 372]]);                // secrets -> actions
+arrow([[1042, 470], [1120, 455], [1197, 470]]);             // actions -> gemini
+arrow([[1197, 640], [1120, 660], [1043, 640]]);             // gemini -> actions
+arrow([[800, 797], [804, 832], [800, 867]], '#222');        // actions -> output
+</script>
+</body></html>
