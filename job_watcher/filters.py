@@ -41,6 +41,7 @@ class Filters:
         self.exclude = compile_any(profile["title_exclude"])
         self.location = compile_any(profile["locations"])
         self.max_years = profile.get("max_min_years", 3)
+        self.stretch_max_years = profile.get("stretch_max_years", self.max_years)
 
     def title_ok(self, title: str) -> bool:
         return bool(self.include.search(title)) and not self.exclude.search(title)
@@ -50,3 +51,7 @@ class Filters:
 
     def experience_ok(self, years: int | None) -> bool:
         return years is None or years <= self.max_years
+
+    def is_stretch(self, years: int | None) -> bool:
+        """Slightly above the target; kept only if the LLM rates the fit highly."""
+        return years is not None and self.max_years < years <= self.stretch_max_years

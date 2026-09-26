@@ -1,10 +1,13 @@
 # Job Watcher
 
+![Job Watcher workflow](docs/job-watcher-workflow.png)
+
 A small pipeline that checks the career sites of 45+ companies every morning, keeps only the
 roles that match my profile, scores them with an LLM, and emails me the new ones.
 
 Job boards show everything; this shows only what is new **and** relevant: data, BI and AI
-roles in India that ask for 0 to 3 years of experience.
+roles in Chennai, Bengaluru and Hyderabad that ask for 0 to 3 years of experience, plus
+4 to 5 year "stretch" roles when the LLM rates the fit 75 or higher.
 
 ## How it works
 
@@ -47,6 +50,7 @@ pip install -r requirements.txt
 python -m job_watcher --dry-run                 # print matches, change nothing
 python -m job_watcher --dry-run --company "Deloitte USI"
 python -m job_watcher --no-email                # save state and report, no email
+python -m job_watcher --resend-all              # email every current match, not just new ones
 python -m pytest -q
 ```
 

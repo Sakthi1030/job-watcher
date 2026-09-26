@@ -14,6 +14,7 @@ class Job:
     min_years: int | None = None
     score: int | None = None
     reason: str = ""
+    stretch: bool = False  # asks for more experience than the target, kept for a high fit score
 
     @property
     def key(self) -> str:

@@ -25,7 +25,7 @@ def fetch_company(company, terms):
     return company, source.fetch(company, terms)
 
 
-def run(dry_run=False, send=True, only=None, test_email=False):
+def run(dry_run=False, send=True, only=None, test_email=False, resend_all=False):
     profile = load_yaml("profile.yaml")
     companies = [c for c in load_yaml("companies.yaml")["companies"] if not only or c["name"] in only]
     filters = Filters(profile)
@@ -40,7 +40,7 @@ def run(dry_run=False, send=True, only=None, test_email=False):
             except Exception as exc:
                 errors.append(f"{company['name']} ({exc.__class__.__name__})")
                 continue
-            new = [j for j in jobs if j.key not in store and filters.title_ok(j.title)]
+            new = [j for j in jobs if (resend_all or j.key not in store) and filters.title_ok(j.title)]
             log.info("%-22s %4d postings, %3d new title matches", company["name"], len(jobs), len(new))
             candidates += [(company, j) for j in new]
 
@@ -58,8 +58,14 @@ def run(dry_run=False, send=True, only=None, test_email=False):
     with ThreadPoolExecutor(max_workers=8) as pool:
         evaluated = list(pool.map(enrich, candidates))
 
-    matches = [j for j in evaluated if filters.location_ok(j.location) and filters.experience_ok(j.min_years)]
-    score_jobs(matches, profile)
+    located = [j for j in evaluated if filters.location_ok(j.location)]
+    core = [j for j in located if filters.experience_ok(j.min_years)]
+    stretch = [j for j in located if filters.is_stretch(j.min_years)]
+    score_jobs(core + stretch, profile)
+    min_score = profile.get("stretch_min_score", 75)
+    for job in stretch:
+        job.stretch = True
+    matches = core + [j for j in stretch if (j.score or 0) >= min_score]
     matches.sort(key=lambda j: (-(j.score or 0), j.min_years if j.min_years is not None else 99, j.company))
 
     markdown = to_markdown(matches, errors)
@@ -70,7 +76,7 @@ def run(dry_run=False, send=True, only=None, test_email=False):
     for job in evaluated:
         store.add(job.key)
     store.save()
-    if send and send_email(matches, errors, test=test_email):
+    if send and send_email(matches, errors, test=test_email or resend_all):
         log.info("Email sent with %d jobs", len(matches))
     elif test_email:
         raise SystemExit("Test email not sent: check the GMAIL_USER and GMAIL_APP_PASSWORD secrets")
@@ -83,6 +89,7 @@ def cli():
     parser.add_argument("--no-email", action="store_true", help="save state and reports but skip the email")
     parser.add_argument("--company", action="append", help="only check this company (repeatable)")
     parser.add_argument("--test-email", action="store_true", help="send the email even when there are no new jobs")
+    parser.add_argument("--resend-all", action="store_true", help="include already-reported jobs (full digest)")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    run(dry_run=args.dry_run, send=not args.no_email, only=args.company, test_email=args.test_email)
+    run(dry_run=args.dry_run, send=not args.no_email, only=args.company, test_email=args.test_email, resend_all=args.resend_all)

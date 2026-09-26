@@ -8,7 +8,9 @@ from pathlib import Path
 
 
 def _exp(job):
-    return f"{job.min_years}+ yrs" if job.min_years is not None else "not stated"
+    if job.min_years is None:
+        return "not stated"
+    return f"{job.min_years}+ yrs" + (" (stretch)" if job.stretch else "")
 
 
 def to_markdown(jobs, errors) -> str:

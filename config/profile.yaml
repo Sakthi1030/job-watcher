@@ -46,27 +46,26 @@ title_exclude:
   - intern
   - returnship
 
-# Location must match one of these.
+# Location must match one of these (Chennai, Bengaluru, Hyderabad only).
+# "Multiple locations" postings (common at Deloitte USI) usually include these cities.
 locations:
-  - india
   - chennai
   - bengaluru
   - bangalore
   - hyderabad
-  - pune
-  - mumbai
-  - gurgaon
-  - gurugram
-  - noida
-  - coimbatore
-  - kolkata
+  - multiple locations
 
 # Skip postings whose stated minimum experience is above this (unstated is kept).
 max_min_years: 3
 
+# Roles asking for a bit more (4-5 years) are kept only when Gemini scores the fit this high.
+stretch_max_years: 5
+stretch_min_score: 75
+
 # Gemini fit score (only runs when the GEMINI_API_KEY secret is set).
 gemini_model: gemini-flash-latest   # falls back to the newest available Flash model
-max_scored_per_run: 25
+max_scored_per_run: 40
+gemini_delay_seconds: 4
 candidate_summary: >
   About 1.75 years of experience. Power BI Analyst at a consulting firm (Microsoft Fabric,
   Power BI, DAX, Power Query, Azure SQL, PowerShell automation, client reporting); previously

@@ -37,5 +37,13 @@ def test_title_filter(title, ok):
 def test_location_and_experience():
     f = Filters(PROFILE)
     assert f.location_ok("Hyderabad, Telangana, India")
+    assert f.location_ok("Bangalore, India") and f.location_ok("Multiple Locations, India")
+    assert not f.location_ok("Pune, India")
     assert not f.location_ok("Austin, Texas, United States")
     assert f.experience_ok(None) and f.experience_ok(3) and not f.experience_ok(5)
+
+
+def test_stretch_band():
+    f = Filters(PROFILE)
+    assert f.is_stretch(4) and f.is_stretch(5)
+    assert not f.is_stretch(3) and not f.is_stretch(6) and not f.is_stretch(None)

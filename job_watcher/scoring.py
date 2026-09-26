@@ -2,6 +2,7 @@
 import json
 import logging
 import os
+import time
 
 from .http import get_json, post_json
 
@@ -63,3 +64,4 @@ def score_jobs(jobs, profile: dict) -> None:
             job.score, job.reason = int(result["score"]), result.get("reason", "")
         except Exception as exc:  # scoring is best effort; never fail the run over it
             log.warning("Gemini scoring failed for %s: %s", job.title, exc)
+        time.sleep(profile.get("gemini_delay_seconds", 4))  # stay under free-tier rate limits
