@@ -66,6 +66,8 @@ def run(dry_run=False, send=True, only=None, test_email=False, resend_all=False)
     for job in stretch:
         job.stretch = True
     matches = core + [j for j in stretch if (j.score or 0) >= min_score]
+    floor = profile.get("min_fit_score", 40)
+    matches = [j for j in matches if j.score is None or j.score >= floor]  # unscored jobs are kept
     matches.sort(key=lambda j: (-(j.score or 0), j.min_years if j.min_years is not None else 99, j.company))
 
     markdown = to_markdown(matches, errors)

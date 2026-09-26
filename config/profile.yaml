@@ -63,7 +63,8 @@ stretch_max_years: 5
 stretch_min_score: 75
 
 # Gemini fit score (only runs when the GEMINI_API_KEY secret is set).
-gemini_model: gemini-flash-latest   # falls back to the newest available Flash model
+gemini_model: gemini-flash-lite-latest   # Flash-Lite has a higher free quota; falls back to Flash
+min_fit_score: 40                        # hide jobs Gemini rates below this (unscored jobs are kept)
 max_scored_per_run: 40
 gemini_delay_seconds: 4
 candidate_summary: >

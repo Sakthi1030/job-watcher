@@ -21,9 +21,11 @@ def resolve_model(preferred: str, key: str) -> str | None:
               if "generateContent" in m.get("supportedGenerationMethods", [])]
     if preferred in usable:
         return preferred
-    flash = sorted((n for n in usable if "flash" in n and "lite" not in n and "preview" not in n
-                    and "exp" not in n and "image" not in n and "tts" not in n), reverse=True)
-    return flash[0] if flash else None
+    stable = [n for n in usable if "flash" in n and not any(
+        tag in n for tag in ("preview", "exp", "image", "tts", "audio", "live"))]
+    lite = sorted((n for n in stable if "lite" in n), reverse=True)
+    flash = sorted((n for n in stable if "lite" not in n), reverse=True)
+    return (lite or flash or [None])[0]
 
 PROMPT = """You are screening job postings for one candidate.
 
@@ -44,7 +46,7 @@ def score_jobs(jobs, profile: dict) -> None:
     key = os.environ.get("GEMINI_API_KEY")
     if not key or not jobs:
         return
-    model = resolve_model(profile.get("gemini_model", "gemini-flash-latest"), key)
+    model = resolve_model(profile.get("gemini_model", "gemini-flash-lite-latest"), key)
     if not model:
         log.warning("No Gemini Flash model available; skipping fit scores")
         return
