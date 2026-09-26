@@ -1,7 +1,33 @@
 # New matching jobs, 26 Sep 2026
 
-1 new matches.
+27 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
+| Deloitte USI | Clients, Strategy & Growth organizations – USI Digital - Associate, Analytics and Insights - Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs | 80 (The candidate matches the 1–3 years experience level, location, and BI automation background well, though the role focuses on Tableau rather than their core Power BI expertise.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Clients-Strategy-Growth-organizations-USI-Digital-L25-Associate-Analytics-and-Insights/366826) |
+| Deloitte USI | Services Specialist - Data Preparation and Reporting - Learning Operations (Insights Team) - Hyderabad | Hyderabad, Telangana, India, India | 3+ yrs | 75 (Strong match on Power BI, SQL, ETL, and reporting skills, though the candidate's 1.75 years of experience falls below the required 3-4 years.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Talent-Services-Learning-Insights-Services-Specialist-Data-Preparation-and-Reporting/358863) |
+| Deloitte USI | Services Specialist - BI Technology Realization - Hyderabad | Hyderabad, Telangana, India, India | 3+ yrs | 72 (The candidate's mix of Power BI, SQL, and GenAI/RAG skills matches the role's unique blend exceptionally well, though their 1.75 years of experience is below the 3-6 years required.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-GPS-GPS-Procurement-L35-Services-Specialist-BI-Technology-Realization-PSBI-Hyderabad/363457) |
+| Deloitte USI | USI-EH27-Consulting-FT-BF-Finance AI- Analytics and Insights Engineer II | Multiple Locations, India | 3+ yrs | 45 (The candidate has relevant technical skills in Python, SQL, and GenAI, but lacks the required 3+ years of enterprise AI experience and deep finance domain expertise.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Consulting-FT-BF-Finance-AI-Analytics-and-Insights-Engineer-II/354826) |
+| Deloitte USI | Data Engineer II-SalesOps | Multiple Locations, India | 3+ yrs | 25 (The role requires 3–6 years of experience and specialized domain expertise in life sciences commercial operations, which the candidate lacks.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Consulting-AI-Data-Data-Engineer-II-SalesOps/358185) |
+| Deloitte USI | Consultant - Tax Transformation Consulting (TTC) - SAP FICO/SD with DRC E-Invoicing & E-Reporting - Hyderabad/Bengaluru/Mumbai/Pune/Gurugram/Chennai/Kolkata | Multiple Locations, India | 2+ yrs | 12 (The role requires specialized experience in tax technology and SAP FICO/SD/DRC configuration, which completely misaligns with the candidate's data engineering and BI background.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH-27-Tax-TTC-ETI-L35-Consultant-SAP-FICO-SD-with-DRC-E-Invoicing-and-E-Reporting/358500) |
+| Capgemini | SAP Group Reporting Consultant | Bangalore, India | 1+ yrs |  | [Open](https://careers.capgemini.com/job/Bangalore-SAP-Group-Reporting-Consultant/1230256401/) |
+| Deloitte USI | Specialist, Analytics and Insights - Consulting Business Advisor - Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs |  | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-EOX-Talent-Business-Advisors-Consulting-Insights-Analyst-Hyderabad/366994) |
+| Deloitte USI | Specialist, Analytics and Insights - Enterprise Solutions Business Advisor - Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs |  | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-EOX-Talent-Business-Advisors-ES-Insights-Analyst-Hyderabad/366993) |
+| Cisco | Data Engineer | Hyderabad, India, India | 2+ yrs |  | [Open](https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/Hyderabad-India/Data-Engineer_2021955-1) |
+| PwC | IN_Associate_Data Engineer_Data and Analytics_Advisory_Pan India | Bengaluru Millenia, India | 2+ yrs |  | [Open](https://pwc.wd3.myworkdayjobs.com/en-US/Global_Experienced_Careers/job/Bengaluru-Millenia/IN-Associate-Data-Engineer-Data-and-Analytics-Advisory-Pan-India_597447WD-1) |
+| Bosch | Microsoft Fabric Platform Administrator | bengaluru, India | 3+ yrs |  | [Open](https://jobs.smartrecruiters.com/BoschGroup/744000139563941) |
+| Experian | ServiceNow Performance Analytics Developer | Hyderabad, India | 3+ yrs |  | [Open](https://jobs.smartrecruiters.com/Experian/744000138117279) |
+| NielsenIQ | Software Test Engineer (ETL tester - python, pyspark, SQL, databricks) | Chennai, TN, India | 3+ yrs |  | [Open](https://jobs.smartrecruiters.com/NielsenIQ/744000143776649) |
+| Sutherland | Data Analyst | Chennai, //TN, India | 3+ yrs |  | [Open](https://jobs.smartrecruiters.com/Sutherland/744000151904629) |
+| Sutherland | MIS and Power BI Developer | Chennai, //TN, India | 3+ yrs |  | [Open](https://jobs.smartrecruiters.com/Sutherland/744000151903130) |
+| Capgemini | Power BI Developer | Chennai (ex Madras), India | not stated |  | [Open](https://careers.capgemini.com/job/Chennai-%28ex-Madras%29-Power-BI-Developer/1438008133/) |
+| Capgemini | Data & Analytics | Bangalore, India | not stated |  | [Open](https://careers.capgemini.com/job/Bangalore-Data-&-Analytics/1415699133/) |
+| Capgemini | Azure data Engineer | Bangalore, India | not stated |  | [Open](https://careers.capgemini.com/job/Bangalore-Azure-data-Engineer/1435562433/) |
+| Capgemini | ETL Data Tester | Hyderabad, India | not stated |  | [Open](https://careers.capgemini.com/job/Hyderabad-ETL-Data-Tester/1399379333/) |
+| Capgemini | Palantir Data Engineer | Bangalore, India | not stated |  | [Open](https://careers.capgemini.com/job/Bangalore-Palantir-Data-Engineer/1412119633/) |
+| Capgemini | Data Engineer | Bangalore, India | not stated |  | [Open](https://careers.capgemini.com/job/Bangalore-Data-Engineer/1411705833/) |
+| Capgemini | Data Engineer - C | Hyderabad, India | not stated |  | [Open](https://careers.capgemini.com/job/Hyderabad-Data-Engineer-C/1237888901/) |
 | Cognizant | Azure DE - ADB, Python, PySpark, SQL + BI | Bangalore, Karnataka, India | not stated |  | [Open](https://careers.cognizant.com/india-en/jobs/00068972031/azure-de-adb-python-pyspark-sql-plus-bi/) |
+| LSEG | Data Analyst | IND-Bangalore-TowerE,RMZ Infin, India | not stated |  | [Open](https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Bangalore-TowerERMZ-Infin/Data-Analyst_R0122049) |
+| LSEG | Data Analyst | IND-Bangalore-TowerE,RMZ Infin, India | not stated |  | [Open](https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Bangalore-TowerERMZ-Infin/Data-Analyst_R0122419) |
+| LSEG | Quality Analytics & Data Specialist | IND-Bangalore-A, RMZ Infinity, India | not stated |  | [Open](https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Bangalore-A-RMZ-Infinity/Quality-Analytics---Data-Specialist_R0122053) |
