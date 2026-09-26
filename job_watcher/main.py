@@ -25,7 +25,7 @@ def fetch_company(company, terms):
     return company, source.fetch(company, terms)
 
 
-def run(dry_run=False, send=True, only=None):
+def run(dry_run=False, send=True, only=None, test_email=False):
     profile = load_yaml("profile.yaml")
     companies = [c for c in load_yaml("companies.yaml")["companies"] if not only or c["name"] in only]
     filters = Filters(profile)
@@ -70,8 +70,10 @@ def run(dry_run=False, send=True, only=None):
     for job in evaluated:
         store.add(job.key)
     store.save()
-    if send and send_email(matches, errors):
+    if send and send_email(matches, errors, test=test_email):
         log.info("Email sent with %d jobs", len(matches))
+    elif test_email:
+        raise SystemExit("Test email not sent: check the GMAIL_USER and GMAIL_APP_PASSWORD secrets")
     return matches
 
 
@@ -80,6 +82,7 @@ def cli():
     parser.add_argument("--dry-run", action="store_true", help="print matches without saving state or emailing")
     parser.add_argument("--no-email", action="store_true", help="save state and reports but skip the email")
     parser.add_argument("--company", action="append", help="only check this company (repeatable)")
+    parser.add_argument("--test-email", action="store_true", help="send the email even when there are no new jobs")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    run(dry_run=args.dry_run, send=not args.no_email, only=args.company)
+    run(dry_run=args.dry_run, send=not args.no_email, only=args.company, test_email=args.test_email)

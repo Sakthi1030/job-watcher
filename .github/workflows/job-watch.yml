@@ -3,7 +3,12 @@ name: Daily job watch
 on:
   schedule:
     - cron: "30 3 * * *"   # 09:00 IST every day
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      test_email:
+        description: "Send the email even if there are no new jobs"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python -m job_watcher
+        run: python -m job_watcher ${{ inputs.test_email && '--test-email' || '' }}
 
       - name: Save state and report
         run: |

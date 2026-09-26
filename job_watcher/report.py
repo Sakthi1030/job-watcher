@@ -32,9 +32,11 @@ def write_reports(markdown: str, reports_dir: Path) -> None:
     (reports_dir / f"{date.today().isoformat()}.md").write_text(markdown, encoding="utf-8")
 
 
-def send_email(jobs, errors) -> bool:
-    user, password = os.environ.get("GMAIL_USER"), os.environ.get("GMAIL_APP_PASSWORD")
-    if not (user and password and jobs):
+def send_email(jobs, errors, test=False) -> bool:
+    user = (os.environ.get("GMAIL_USER") or "").strip()
+    # Google shows app passwords as "abcd efgh ijkl mnop"; accept them pasted with spaces.
+    password = "".join((os.environ.get("GMAIL_APP_PASSWORD") or "").split())
+    if not (user and password and (jobs or test)):
         return False
     rows = "".join(
         f"<tr><td>{html.escape(j.company)}</td><td><a href='{html.escape(j.url)}'>{html.escape(j.title)}</a></td>"
@@ -42,15 +44,16 @@ def send_email(jobs, errors) -> bool:
         f"<td>{'' if j.score is None else j.score}</td><td>{html.escape(j.reason)}</td></tr>"
         for j in jobs
     )
+    intro = "Test email: the job watcher can send mail. " if test else ""
     body = (
-        f"<p>{len(jobs)} new matching jobs today.</p>"
+        f"<p>{intro}{len(jobs)} new matching jobs today.</p>"
         "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse;font-family:Arial;font-size:13px'>"
         "<tr><th>Company</th><th>Role</th><th>Location</th><th>Experience</th><th>Fit</th><th>Why</th></tr>"
         f"{rows}</table>"
         + (f"<p style='color:#888'>Failed sources: {html.escape(', '.join(errors))}</p>" if errors else "")
     )
     msg = MIMEText(body, "html")
-    msg["Subject"] = f"Job watcher: {len(jobs)} new matches ({date.today():%d %b})"
+    msg["Subject"] = f"Job watcher{' test' if test else ''}: {len(jobs)} new matches ({date.today():%d %b})"
     msg["From"] = user
     msg["To"] = os.environ.get("MAIL_TO", user)
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
