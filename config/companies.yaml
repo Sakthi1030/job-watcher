@@ -1,0 +1,62 @@
+# Companies to watch. Add a company by copying a line for the same "ats" type.
+#   smartrecruiters: id = slug in jobs.smartrecruiters.com/<slug>
+#   greenhouse:      id = slug in boards.greenhouse.io/<slug>
+#   lever:           id = slug in jobs.lever.co/<slug>
+#   workday:         host / tenant / site from <tenant>.wdN.myworkdayjobs.com/<site>
+#   deloitte_usi, capgemini, cognizant: custom career-site parsers (no id needed)
+companies:
+  # Consulting and services
+  - {name: Deloitte USI, ats: deloitte_usi}
+  - {name: Capgemini, ats: capgemini}
+  - {name: Cognizant, ats: cognizant}
+  - {name: PwC, ats: workday, host: pwc.wd3.myworkdayjobs.com, tenant: pwc, site: Global_Experienced_Careers}
+  - {name: Kyndryl, ats: workday, host: kyndryl.wd5.myworkdayjobs.com, tenant: kyndryl, site: KyndrylProfessionalCareers}
+  - {name: Sutherland, ats: smartrecruiters, id: Sutherland}
+  - {name: Thoughtworks, ats: greenhouse, id: thoughtworks}
+  - {name: Sigmoid, ats: greenhouse, id: sigmoid}
+
+  # Data, analytics and research
+  - {name: NielsenIQ, ats: smartrecruiters, id: NielsenIQ}
+  - {name: Experian, ats: smartrecruiters, id: Experian}
+  - {name: Equifax, ats: workday, host: equifax.wd5.myworkdayjobs.com, tenant: equifax, site: External}
+  - {name: LSEG, ats: workday, host: lseg.wd3.myworkdayjobs.com, tenant: lseg, site: Careers}
+  - {name: Thomson Reuters, ats: workday, host: thomsonreuters.wd5.myworkdayjobs.com, tenant: thomsonreuters, site: External_Career_Site}
+  - {name: Databricks, ats: greenhouse, id: databricks}
+  - {name: MongoDB, ats: greenhouse, id: mongodb}
+  - {name: Hevo Data, ats: lever, id: hevodata}
+
+  # Banking and financial services
+  - {name: Mastercard, ats: workday, host: mastercard.wd1.myworkdayjobs.com, tenant: mastercard, site: CorporateCareers}
+  - {name: State Street, ats: workday, host: statestreet.wd1.myworkdayjobs.com, tenant: statestreet, site: Global}
+  - {name: BlackRock, ats: workday, host: blackrock.wd1.myworkdayjobs.com, tenant: blackrock, site: BlackRock_Professional}
+  - {name: Broadridge, ats: workday, host: broadridge.wd5.myworkdayjobs.com, tenant: broadridge, site: Careers}
+  - {name: SS&C, ats: workday, host: ssctech.wd1.myworkdayjobs.com, tenant: ssctech, site: SSCTechnologies}
+  - {name: FIS, ats: workday, host: fis.wd5.myworkdayjobs.com, tenant: fis, site: SearchJobs}
+  - {name: Paytm, ats: lever, id: paytm}
+  - {name: Zeta, ats: lever, id: zeta}
+  - {name: CRED, ats: lever, id: cred}
+  - {name: Groww, ats: greenhouse, id: groww}
+
+  # Tech and product companies
+  - {name: Salesforce, ats: workday, host: salesforce.wd12.myworkdayjobs.com, tenant: salesforce, site: External_Career_Site}
+  - {name: Adobe, ats: workday, host: adobe.wd5.myworkdayjobs.com, tenant: adobe, site: external_experienced}
+  - {name: NVIDIA, ats: workday, host: nvidia.wd5.myworkdayjobs.com, tenant: nvidia, site: NVIDIAExternalCareerSite}
+  - {name: Cisco, ats: workday, host: cisco.wd5.myworkdayjobs.com, tenant: cisco, site: Cisco_Careers}
+  - {name: Intel, ats: workday, host: intel.wd1.myworkdayjobs.com, tenant: intel, site: External}
+  - {name: HP, ats: workday, host: hp.wd5.myworkdayjobs.com, tenant: hp, site: ExternalCareerSite}
+  - {name: ServiceNow, ats: smartrecruiters, id: ServiceNow}
+  - {name: Freshworks, ats: smartrecruiters, id: Freshworks}
+  - {name: Okta, ats: greenhouse, id: okta}
+  - {name: Zscaler, ats: greenhouse, id: zscaler}
+  - {name: Rubrik, ats: greenhouse, id: rubrik}
+  - {name: Meesho, ats: lever, id: meesho}
+
+  # Retail, pharma, industrial and logistics (large India tech centres)
+  - {name: Target, ats: workday, host: target.wd5.myworkdayjobs.com, tenant: target, site: targetcareers}
+  - {name: Bosch, ats: smartrecruiters, id: BoschGroup}
+  - {name: Continental, ats: smartrecruiters, id: Continental}
+  - {name: Novartis, ats: workday, host: novartis.wd3.myworkdayjobs.com, tenant: novartis, site: Novartis_Careers}
+  - {name: AstraZeneca, ats: workday, host: astrazeneca.wd3.myworkdayjobs.com, tenant: astrazeneca, site: Careers}
+  - {name: GSK, ats: workday, host: gsk.wd5.myworkdayjobs.com, tenant: gsk, site: GSKCareers}
+  - {name: Unilever, ats: workday, host: unilever.wd3.myworkdayjobs.com, tenant: unilever, site: Unilever_Experienced_Professionals}
+  - {name: Maersk, ats: workday, host: maersk.wd3.myworkdayjobs.com, tenant: maersk, site: Maersk_Careers}

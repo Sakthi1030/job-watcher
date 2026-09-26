@@ -1,0 +1,77 @@
+# What counts as a match. All patterns are case-insensitive regular expressions.
+
+# Keywords sent to career sites that support search (Workday, SmartRecruiters, etc.).
+search_terms:
+  - power bi
+  - data engineer
+  - data analyst
+  - microsoft fabric
+  - azure data
+  - analytics
+
+# A job title must match at least one of these...
+title_include:
+  - power ?bi
+  - business intelligence
+  - \bbi\b
+  - data engineer
+  - data analyst
+  - analytics engineer
+  - data operations
+  - fabric
+  - azure data
+  - databricks
+  - pyspark
+  - snowflake
+  - sql developer
+  - \betl\b
+  - reporting
+  - analytics
+  - ai engineer
+
+# ...and none of these (seniority the candidate does not have yet).
+title_exclude:
+  - senior
+  - \bsr\.?\b
+  - lead
+  - principal
+  - manager
+  - managing
+  - director
+  - architect
+  - head
+  - staff
+  - \bvp\b
+  - expert
+  - intern
+  - returnship
+
+# Location must match one of these.
+locations:
+  - india
+  - chennai
+  - bengaluru
+  - bangalore
+  - hyderabad
+  - pune
+  - mumbai
+  - gurgaon
+  - gurugram
+  - noida
+  - coimbatore
+  - kolkata
+
+# Skip postings whose stated minimum experience is above this (unstated is kept).
+max_min_years: 3
+
+# Gemini fit score (only runs when the GEMINI_API_KEY secret is set).
+gemini_model: gemini-2.5-flash
+max_scored_per_run: 25
+candidate_summary: >
+  About 1.75 years of experience. Power BI Analyst at a consulting firm (Microsoft Fabric,
+  Power BI, DAX, Power Query, Azure SQL, PowerShell automation, client reporting); previously
+  Junior Data Engineer and SQL Developer (SQL Server, T-SQL, data migration, UAT). Projects:
+  Databricks/PySpark lakehouse with a FastAPI + React front end, a RAG chatbot with the Gemini
+  API, a Node.js CRM. M.Sc. Data Science and AI. Microsoft PL-300 and DP-700 certified.
+  Based in Chennai, open to Hyderabad, Bengaluru and Pune. Targets data analyst, BI developer,
+  data engineer and junior AI engineer roles at 0 to 3 years of experience.
