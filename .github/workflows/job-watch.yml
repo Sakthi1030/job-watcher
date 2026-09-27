@@ -2,7 +2,7 @@ name: Daily job watch
 
 on:
   schedule:
-    - cron: "30 3 * * *"   # 09:00 IST every day
+    - cron: "17 3 * * *"   # 08:47 IST every day; off the :00/:30 rush, when GitHub delays or drops scheduled runs
   workflow_dispatch:
     inputs:
       test_email:
