@@ -1,14 +1,4 @@
 # New matching jobs, 28 Sep 2026
 
-8 new matches.
+0 new matches.
 
-| Company | Role | Location | Experience | Fit | Link |
-|---|---|---|---|---|---|
-| Accenture | Custom Software Engineer | Hyderabad, India | 3+ yrs | 75 (The candidate has strong Power BI and data modeling skills matching the core requirement, though the role asks for a minimum of 3 years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5769802-S2068826_en&title=Custom+Software+Engineer) |
-| Accenture | AI/ML Computational Science Analyst | Bengaluru, India | 3+ yrs | 55 (The role asks for 3 to 5 years of experience while the candidate has about 1.75 years, though the skill set aligns reasonably well.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=AIOC-S01660164_en&title=AI%2FML+Computational+Science+Analyst) |
-| Accenture | Custom Software Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate has strong Databricks skills and matches the location, but falls short of the required 3 years of experience.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5356055-S1953034_en&title=Custom+Software+Engineer) |
-| Databricks | AI Engineer, FDE (Forward Deployed Engineer) | Bengaluru, India; Delhi, India; Mumbai, India; Pune, India | not stated | 50 (The candidate has relevant AI and Databricks project experience and a Master's in Data Science, but the FDE role typically requires more senior industry experience than the candidate's 1.75 years.) | [Open](https://databricks.com/company/careers/open-positions/job?gh_jid=8015848002) |
-| Accenture | Data Engineer | Chennai, India | 3+ yrs | 45 (The role requires a minimum of 3 years of experience, whereas the candidate has approximately 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5639153-S2057494_en&title=Data+Engineer) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has about 1.75 years of experience while the role strictly requires a minimum of 3 years of experience in Large Language Models.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5722539-S2067188_en&title=Data+Engineer) |
-| Accenture | Data Engineer | Hyderabad, India | 3+ yrs | 40 (The candidate has relevant skills like Databricks, but the role asks for a minimum of 3 years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5629666-S2057372_en&title=Data+Engineer) |
-| LSEG | Business Reporting and Communication Specialist | IND-Bangalore-A, RMZ Infinity, India | not stated | 40 (The role leans heavily toward business communications and executive reporting rather than core technical data engineering or Power BI development.) | [Open](https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Bangalore-A-RMZ-Infinity/Business-Reporting-and-Communication-Specialist_R0122591) |
