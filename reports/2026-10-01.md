@@ -1,10 +1,8 @@
 # New matching jobs, 01 Oct 2026
 
-4 new matches.
+2 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Capgemini | Python GenAI Engineer | Bangalore, India | not stated | 85 (The candidate has strong Python, API, and RAG project experience aligning well with the junior AI engineer role, though the job requires broader ML/deep learning framework depth.) | [Open](https://careers.capgemini.com/job/Bangalore-Python-GenAI-Engineer/1434271233/) |
-| Capgemini | Python & GenAI Engineer | Bangalore, India | not stated | 75 (The candidate has strong Python, RAG, API, and Git skills matching the GenAI requirements, though total professional experience is slightly on the junior side for this specific role.) | [Open](https://careers.capgemini.com/job/Bangalore-Python-&-GenAI-Engineer/1422913533/) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 70 (The candidate has strong data engineering skills and targets Bengaluru, but the role asks for a minimum of 3 years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5210503-S1923290_en&title=Data+Engineer) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has Snowflake skills and fits the location, but falls short of the required 3 years of experience in Snowflake.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5728950-S2068326_en&title=Data+Engineer) |
+| Target | Data Analyst | Bangalore,India, India | 2+ yrs | 90 (The candidate has strong SQL, Python, Git, and Power BI skills matching the requirements, with an appropriate 1.75 years of experience, though the role asks for 2-6 years overall.) | [Open](https://target.wd5.myworkdayjobs.com/en-US/targetcareers/job/BangaloreIndia/Data-Analyst_R0000431066) |
+| Deloitte USI | Associate - Reporting & Analytics - Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs | 85 (The candidate's strong Power BI and data visualization skills and experience match the reporting and analytics focus of the role, located in their preferred city of Hyderabad.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-EA-GTLO-Reporting-Analytics-Associate/363304) |
