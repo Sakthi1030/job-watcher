@@ -1,7 +1,4 @@
 # New matching jobs, 03 Oct 2026
 
-1 new matches.
+0 new matches.
 
-| Company | Role | Location | Experience | Fit | Link |
-|---|---|---|---|---|---|
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate has Databricks experience and targets data engineering roles in Bengaluru, but the position strictly requires 3+ years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5749745-S2068287_en&title=Data+Engineer) |
