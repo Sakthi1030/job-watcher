@@ -4,4 +4,4 @@
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 45 (The candidate has PySpark experience and fits the location, but falls short of the required 3 years of minimum experience.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5641556-S2068332_en&title=Data+Engineer) |
+| Bosch | Data Analyst – Data Modelling, SQL & Power BI | bangalore, India | 3+ yrs | 75 (The candidate has strong alignment with the required SQL, Power BI, and Azure/Fabric skills, but the role asks for 3-5 years of experience while the candidate has about 1.75 years.) | [Open](https://jobs.smartrecruiters.com/BoschGroup/744000153409968) |
