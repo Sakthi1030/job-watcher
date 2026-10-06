@@ -4,4 +4,4 @@
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Platform Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has strong relevant tech skills in Azure and PySpark, but falls short of the required 3 to 5 years of experience for this Senior Analyst role.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5470759-S2002036_en&title=Data+Platform+Engineer) |
+| Capgemini | Data Analyst | Bangalore, India | not stated | 45 (The role is a general software engineering position rather than a data analyst role, though the experience level matches.) | [Open](https://careers.capgemini.com/job/Bangalore-Data-Analyst/1428170033/) |
