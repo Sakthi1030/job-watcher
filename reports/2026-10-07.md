@@ -1,10 +1,7 @@
 # New matching jobs, 07 Oct 2026
 
-4 new matches.
+1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Engineer | Hyderabad, India | 3+ yrs | 85 (The candidate has strong matching skills in Databricks and PySpark and is open to Hyderabad, though the role asks for a minimum of 3 years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5731630-S2068263_en&title=Data+Engineer) |
-| Deloitte USI | Associate (Data & Insights)– Experiential Space and Technology - Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs | 45 (The role leans heavily towards general data governance, project coordination, and program management rather than the candidate's core technical strengths in data engineering and Power BI development.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-G-P-Client-Relationship-Development-L25-Associate-Data-Insights-Experiential-Space-and-Technology-Hyderabad/358955) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 45 (The candidate has Databricks experience and fits the location, but falls short of the strict 3-year minimum experience requirement.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5730348-S2068340_en&title=Data+Engineer) |
-| Accenture | Data Engineer | Chennai, India | 3+ yrs | 40 (The candidate has strong PySpark skills and is based in Chennai, but falls short of the strict 3-year minimum experience requirement for this Senior Analyst role.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5637282-S2068312_en&title=Data+Engineer) |
+| Deloitte USI | Consultant - Global Employer Services Technology Center (GESTC) - Tier 2 Product Support & Technology Operations Professional | Hyderabad, Telangana, India, India | not stated |  | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Tax-GESTC-Tier-2-Product-Support-Technology-Operations-Professional-L35-Consultant/370357) |
