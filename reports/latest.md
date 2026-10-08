@@ -1,10 +1,7 @@
 # New matching jobs, 08 Oct 2026
 
-4 new matches.
+1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | S&C Global Network - AI - CG&S- Analyst | Bengaluru, India | not stated | 85 (The candidate has strong Python, PySpark, SQL, and AI skills matching the analyst-level role in Bengaluru, though it requires some data science and consumer goods domain focus.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=R00318377_en&title=S%26C+Global+Network+-+AI+-+CG%26S-+Analyst) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate has strong relevant skills in Databricks and PySpark, but the role asks for a minimum of 3 years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5367344-S1954527_en&title=Data+Engineer) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate has Databricks experience and targets data engineering, but the role requires a minimum of 3 years of experience while the candidate has about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5478010-S2002345_en&title=Data+Engineer) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate has the required technical skills like Databricks and Python, but falls short of the minimum 3 years of experience required.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5699460-S2061163_en&title=Data+Engineer) |
+| Accenture | Data Engineer | Chennai, India | 3+ yrs | 50 (The candidate has strong PySpark and data engineering skills, but falls short of the required 3 years of experience as they have about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5554830-S2023022_en&title=Data+Engineer) |
