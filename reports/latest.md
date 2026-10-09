@@ -1,7 +1,4 @@
 # New matching jobs, 09 Oct 2026
 
-1 new matches.
+0 new matches.
 
-| Company | Role | Location | Experience | Fit | Link |
-|---|---|---|---|---|---|
-| Deloitte USI | Growth & Purpose - USI Digital - Associate, Analytics and Insights - Clients, Strategy & Growth - Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs | 90 (The candidate has ideal experience, strong Power BI, DAX, and Power Query skills, and matches the location and entry-to-mid level requirements.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Growth-Purpose-USI-Digital-L25-Associate-Analytics-and-Insights-Clients-Strategy-Growth-Hyderabad/360826) |
