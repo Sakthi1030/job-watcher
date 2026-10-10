@@ -1,9 +1,4 @@
 # New matching jobs, 10 Oct 2026
 
-3 new matches.
+0 new matches.
 
-| Company | Role | Location | Experience | Fit | Link |
-|---|---|---|---|---|---|
-| Capgemini | Azure Data Engineer - B1 | Bangalore, India | not stated | 85 (The candidate has strong Azure data engineering skills and relevant experience, though it's on the lower end of professional tenure.) | [Open](https://careers.capgemini.com/job/Bangalore-Azure-Data-Engineer-B1/1430494833/) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate matches the location and technical skills like Databricks, but falls short of the required 3 years of experience as they have about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5377445-S1958482_en&title=Data+Engineer) |
-| Deloitte USI | Clients, Strategy & Growth organizations – USI Digital – Specialist, Data Management- Hyderabad | Hyderabad, Telangana, India, India | 3+ yrs | 40 (The candidate has Power BI and SQL skills, but the role specifically requires 3-4 years of experience working with Salesforce or another CRM platform, which exceeds the candidate's profile.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-CS-G-USI-Digital-L35-Specialist-Data-Management-Hyderabad/370416) |
