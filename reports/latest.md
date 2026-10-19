@@ -1,4 +1,8 @@
-# New matching jobs, 18 Oct 2026
+# New matching jobs, 19 Oct 2026
 
 0 new matches.
 
+
+## Sources that failed this run
+
+- Salesforce (HTTPError)
