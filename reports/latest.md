@@ -1,14 +1,8 @@
-# New matching jobs, 19 Oct 2026
+# New matching jobs, 20 Oct 2026
 
-4 new matches.
+2 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 45 (The candidate has strong Power BI and SQL skills, but the role requires 3 to 5 years of experience in financial reporting and explicitly asks for SAP, which is a negative fit.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447816) |
-| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 45 (The candidate has strong Power BI and reconciliation skills, but falls short of the 3-5 years experience requirement and mentions SAP as a negative fit.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447815) |
-| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 40 (The candidate has strong Power BI and SQL skills, but the role requires 3 to 5 years of experience and mentions SAP, which is outside the candidate's profile.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447820) |
-| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 40 (The role requires 3 to 5 years of financial reporting experience and SAP, which does not align with the candidate's background.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447809) |
-
-## Sources that failed this run
-
-- Salesforce (HTTPError)
+| Accenture | Custom Software Engineer | Chennai, India | 3+ yrs | 50 (The candidate has strong Power BI and SQL skills, but the role requires 3+ years of experience and heavily focuses on Smartsheet development.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5671791-S2072685_en&title=Custom+Software+Engineer) |
+| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has Databricks and Python skills but falls short of the required 3 years of experience on the Databricks platform.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5367346-S1954524_en&title=Data+Engineer) |
