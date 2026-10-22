@@ -1,7 +1,7 @@
-# New matching jobs, 21 Oct 2026
+# New matching jobs, 22 Oct 2026
 
 1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 40 (The candidate has strong Power BI and finance reporting experience, but the role requires 3 to 5 years of experience and SAP/ERP knowledge which exceeds the candidate's profile.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447828) |
+| Accenture | Data Engineer | Chennai, India | 3+ yrs | 50 (The candidate has strong Azure Databricks and data engineering skills, but falls short of the strict 3-year minimum experience requirement.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5588149-S2030190_en&title=Data+Engineer) |
