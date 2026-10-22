@@ -4,4 +4,4 @@
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Engineer | Chennai, India | 3+ yrs | 50 (The candidate has strong Azure Databricks and data engineering skills, but falls short of the strict 3-year minimum experience requirement.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5588149-S2030190_en&title=Data+Engineer) |
+| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has Databricks skills and fits the location, but falls short of the minimum 3 years of Databricks experience required.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5639157-S2057505_en&title=Data+Engineer) |
