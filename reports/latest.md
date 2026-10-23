@@ -1,7 +1,7 @@
-# New matching jobs, 22 Oct 2026
+# New matching jobs, 23 Oct 2026
 
 1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has Databricks skills and fits the location, but falls short of the minimum 3 years of Databricks experience required.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5639157-S2057505_en&title=Data+Engineer) |
+| Deloitte USI | Data Engineer - AI and Data Science Engineer II | Multiple Locations, India | 2+ yrs | 90 (The candidate has strong Python, SQL, and PySpark skills and matches the 2-4 years experience requirement, though located in Chennai with target locations including Bengaluru and Hyderabad.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Consulting-P-P-Industry-Products-Data-Engineer-AI-and-Data-Science-Engineer-II/370356) |
