@@ -4,4 +4,4 @@
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 55 (The candidate has strong data engineering skills and is open to Bengaluru, but falls slightly short of the 3-year minimum experience requirement.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5792305-S2073084_en&title=Data+Engineer) |
+| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 40 (The candidate has Power BI and reconciliation skills, but the role requires 3 to 5 years of experience in financial reporting and SAP, which does not align well.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447834) |
