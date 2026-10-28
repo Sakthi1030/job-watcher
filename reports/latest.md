@@ -1,7 +1,7 @@
-# New matching jobs, 27 Oct 2026
+# New matching jobs, 28 Oct 2026
 
 1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 40 (The candidate has Power BI and reconciliation skills, but the role requires 3 to 5 years of experience in financial reporting and SAP, which does not align well.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447834) |
+| Deloitte USI | Applied AI Platform Engineer-DATA ENGINEER - Software Specialist Engineer I | Multiple Locations, India | 3+ yrs | 50 (The candidate has strong Python, data engineering, and AI skills, but the role requires platform and distributed systems engineering experience that exceeds their 1.75 years.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Product-Engineering-WPE-Applied-AI-Platform-Engineer-DATA-ENGINEER-Software-Specialist-Engineer-I-L35/372488) |
