@@ -1,9 +1,10 @@
 # New matching jobs, 05 Nov 2026
 
-3 new matches.
+4 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | I&F Decision Sci Practitioner Analyst | Bengaluru, India | 3+ yrs | 75 (The candidate has strong Power BI, SQL, and data analytics skills matching the role, though the required experience of 3 to 5 years is slightly above the candidate's ~1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=R00367988_en&title=I%26F+Decision+Sci+Practitioner+Analyst) |
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 55 (The candidate has relevant data engineering skills and Databricks experience, but falls short of the minimum 3 years of experience required for this Senior Analyst role.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5730362-S2074190_en&title=Data+Engineer) |
-| Capgemini | Snowflake Developer | Hyderabad, India | 3+ yrs | 50 (The candidate has Snowflake and Python skills, but the role requires 3+ years of experience which exceeds the candidate's ~1.75 years.) | [Open](https://careers.capgemini.com/job/Hyderabad-Snowflake-Developer/1454341933/) |
+| Deloitte USI | Project - Services Associate - Data Preparation and Reporting - Talent Experience and Engagement (Data Visualization) - Hyderabad | Hyderabad, Telangana, India, India | 2+ yrs | 50 (The candidate has strong data preparation and SQL skills, but lacks the required 2 to 3 years of Tableau experience as their primary visualization tool is Power BI.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Talent-Experience-and-Engagement-PROJECT-Services-Associate-Data-Preparation-and-Reporting-Data-Visualization-Hyderabad/374334) |
+| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 50 (The candidate matches the location and technical skills like Databricks, but falls short of the required 3 years of experience in Databricks.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5639162-S2057503_en&title=Data+Engineer) |
+| GSK | Reporting Specialists (APAC) | Bengaluru Luxor North Tower, India | 3+ yrs | 45 (The candidate has strong Power BI and finance reporting experience, but the role requires 3 to 5 years of experience and mentions SAP, which is a negative fit.) | [Open](https://gsk.wd5.myworkdayjobs.com/en-US/GSKCareers/job/Bengaluru-Luxor-North-Tower/Reporting-Specialists--APAC-_447841) |
+| NielsenIQ | Data Operations Analyst | Chennai, TN, India | not stated | 40 (The role is a data operations and manual data classification position rather than a data analyst or engineering role, offering lower technical alignment.) | [Open](https://jobs.smartrecruiters.com/NielsenIQ/744000159787869) |
