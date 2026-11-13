@@ -1,7 +1,7 @@
-# New matching jobs, 12 Nov 2026
+# New matching jobs, 13 Nov 2026
 
 1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Unilever | Gemini Agent Platform AI Engineer | Uniops Bangalore Centre, India | not stated | 75 (The candidate has strong AI and Python engineering experience and targets junior AI roles, though the position focuses heavily on enterprise Google Cloud and Gemini agent platforms.) | [Open](https://unilever.wd3.myworkdayjobs.com/en-US/Unilever_Experienced_Professionals/job/Uniops-Bangalore-Centre/Gemini-Agent-Platform-AI-Engineer_R-1190647-1) |
+| Deloitte USI | Services Support Associate II, Data Preparation and Reporting -Operations-Hyderabad | Hyderabad, Telangana, India, India | 1+ yrs | 75 (The candidate has strong SQL, reporting, and data preparation skills matching the Hyderabad location, though the support-heavy operations focus is slightly misaligned with their engineering-leaning profile.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH-FY27-Enabling-Areas-GFS-R-A-Operations-APAC-Analyst/365796) |
