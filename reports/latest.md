@@ -1,7 +1,26 @@
-# New matching jobs, 13 Nov 2026
+# New matching jobs, 14 Nov 2026
 
 1 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| NielsenIQ | Data Engineer | Chennai, TN, India | 3+ yrs | 50 (The candidate has relevant Databricks and PySpark skills but falls short of the required 3-6 years of experience, as they have under 2 years.) | [Open](https://jobs.smartrecruiters.com/NielsenIQ/744000161430579) |
+| Novartis | Specialist, AI Engineer | Prague, Hyderabad (Office), Czech Republic | 3+ yrs | 40 (The candidate has strong AI and Python skills but falls short of the required 3+ years of software/AI engineering experience.) | [Open](https://novartis.wd3.myworkdayjobs.com/en-US/Novartis_Careers/job/Prague/Specialist--AI-Engineer_REQ-10089980) |
+
+## Sources that failed this run
+
+- Kyndryl (HTTPError)
+- Equifax (HTTPError)
+- Thomson Reuters (HTTPError)
+- Mastercard (HTTPError)
+- State Street (HTTPError)
+- BlackRock (HTTPError)
+- Broadridge (HTTPError)
+- SS&C (HTTPError)
+- FIS (HTTPError)
+- Adobe (HTTPError)
+- NVIDIA (HTTPError)
+- Cisco (HTTPError)
+- Intel (HTTPError)
+- HP (HTTPError)
+- Target (HTTPError)
+- GSK (HTTPError)
