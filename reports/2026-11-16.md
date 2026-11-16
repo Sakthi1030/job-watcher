@@ -1,11 +1,30 @@
 # New matching jobs, 16 Nov 2026
 
-1 new matches.
+0 new matches.
 
-| Company | Role | Location | Experience | Fit | Link |
-|---|---|---|---|---|---|
-| Accenture | Data Engineer | Hyderabad, India | 3+ yrs | 55 (The candidate has strong Databricks and data engineering experience, but falls short of the required 3 years of experience as they have about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5816670-S2074523_en&title=Data+Engineer) |
 
 ## Sources that failed this run
 
+- PwC (HTTPError)
+- Kyndryl (HTTPError)
+- Equifax (HTTPError)
+- LSEG (HTTPError)
+- Thomson Reuters (HTTPError)
+- Mastercard (HTTPError)
+- State Street (HTTPError)
+- BlackRock (HTTPError)
+- Broadridge (HTTPError)
+- SS&C (HTTPError)
+- FIS (HTTPError)
 - Salesforce (HTTPError)
+- Adobe (HTTPError)
+- NVIDIA (HTTPError)
+- Cisco (HTTPError)
+- Intel (HTTPError)
+- HP (HTTPError)
+- Target (HTTPError)
+- Novartis (HTTPError)
+- AstraZeneca (HTTPError)
+- GSK (HTTPError)
+- Unilever (HTTPError)
+- Maersk (HTTPError)
