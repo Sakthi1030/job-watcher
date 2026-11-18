@@ -1,10 +1,13 @@
 # New matching jobs, 18 Nov 2026
 
-1 new matches.
+4 new matches.
 
 | Company | Role | Location | Experience | Fit | Link |
 |---|---|---|---|---|---|
-| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has only ~1.75 years of experience while the role requires a minimum of 3 years specifically in Snowflake.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5668532-S2075900_en&title=Data+Engineer) |
+| Bosch | Power BI Developer | bangalore, India | 2+ yrs | 95 (The candidate has strong Power BI, DAX, Power Query, and Microsoft Fabric experience that directly matches the 2-3 years requirement for this role in Bengaluru.) | [Open](https://jobs.smartrecruiters.com/BoschGroup/744000162216635) |
+| Capgemini | Data Engineer | Hyderabad, India | not stated | 85 (The candidate has strong data engineering experience, relevant certifications, and matches the location and experience level well.) | [Open](https://careers.capgemini.com/job/Hyderabad-Data-Engineer/1458271933/) |
+| Bosch | Power BI Developer | bangalore, India | 3+ yrs | 75 (The candidate has strong matching skills in Power BI, DAX, and Microsoft Fabric, but the role asks for 3-5 years of experience while the candidate has about 1.75 years.) | [Open](https://jobs.smartrecruiters.com/BoschGroup/744000162216780) |
+| Accenture | Data Engineer | Chennai, India | 3+ yrs | 50 (The candidate matches the location and Databricks/data engineering skills, but falls short of the required 3 years of experience since they have about 1.75 years.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5824032-S2075897_en&title=Data+Engineer) |
 
 ## Sources that failed this run
 
