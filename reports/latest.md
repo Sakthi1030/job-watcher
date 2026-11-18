@@ -1,7 +1,10 @@
-# New matching jobs, 17 Nov 2026
+# New matching jobs, 18 Nov 2026
 
-0 new matches.
+1 new matches.
 
+| Company | Role | Location | Experience | Fit | Link |
+|---|---|---|---|---|---|
+| Accenture | Data Engineer | Bengaluru, India | 3+ yrs | 40 (The candidate has only ~1.75 years of experience while the role requires a minimum of 3 years specifically in Snowflake.) | [Open](https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5668532-S2075900_en&title=Data+Engineer) |
 
 ## Sources that failed this run
 
@@ -10,16 +13,12 @@
 - Equifax (HTTPError)
 - LSEG (HTTPError)
 - Thomson Reuters (HTTPError)
-- Hevo Data (ReadTimeout)
 - Mastercard (HTTPError)
 - State Street (HTTPError)
 - BlackRock (HTTPError)
 - Broadridge (HTTPError)
 - SS&C (HTTPError)
 - FIS (HTTPError)
-- Paytm (HTTPError)
-- Zeta (HTTPError)
-- CRED (ReadTimeout)
 - Salesforce (HTTPError)
 - Adobe (HTTPError)
 - NVIDIA (HTTPError)
