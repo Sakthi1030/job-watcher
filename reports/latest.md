@@ -13,7 +13,6 @@
 - Mastercard (HTTPError)
 - State Street (HTTPError)
 - BlackRock (HTTPError)
-- Broadridge (HTTPError)
 - SS&C (HTTPError)
 - FIS (HTTPError)
 - Salesforce (HTTPError)
