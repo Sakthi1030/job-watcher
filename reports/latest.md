@@ -15,7 +15,6 @@
 - BlackRock (HTTPError)
 - Broadridge (HTTPError)
 - SS&C (HTTPError)
-- FIS (HTTPError)
 - Salesforce (HTTPError)
 - Adobe (HTTPError)
 - NVIDIA (HTTPError)
