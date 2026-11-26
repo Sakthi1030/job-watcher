@@ -1,10 +1,7 @@
-# New matching jobs, 25 Nov 2026
+# New matching jobs, 26 Nov 2026
 
-1 new matches.
+0 new matches.
 
-| Company | Role | Location | Experience | Fit | Link |
-|---|---|---|---|---|---|
-| Deloitte USI | Services Specialist - Data Preparation & Reporting | Hyderabad, Telangana, India, India | 2+ yrs | 90 (The candidate has the required 18-24 months of analytics experience, strong Power BI and data preparation skills, and is based in Hyderabad, perfectly matching the role.) | [Open](https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-GTO-Senior-Analyst-Data-Preparation-Reporting-Hyderabad/372964) |
 
 ## Sources that failed this run
 
@@ -14,9 +11,13 @@
 - Equifax (HTTPError)
 - LSEG (HTTPError)
 - Thomson Reuters (HTTPError)
+- Mastercard (HTTPError)
 - State Street (HTTPError)
+- BlackRock (HTTPError)
 - Broadridge (HTTPError)
 - SS&C (HTTPError)
+- FIS (HTTPError)
+- Salesforce (HTTPError)
 - Adobe (HTTPError)
 - NVIDIA (HTTPError)
 - Cisco (HTTPError)
